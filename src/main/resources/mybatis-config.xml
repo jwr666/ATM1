@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+  <settings>
+    <setting name="logImpl" value="STDOUT_LOGGING"/>
+  </settings>
+  <!--实体类包名-->
+  <typeAliases>
+  	<package name="com.jwr.atm.settings.domain"/>
+  </typeAliases>
+
+ <!--mapper文件位置-->
+  <mappers>
+   
+      <package name="com.jwr.atm.settings.dao"/>
+
+
+  </mappers>
+</configuration>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

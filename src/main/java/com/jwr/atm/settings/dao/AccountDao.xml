@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.jwr.atm.settings.dao.AccountDao">
+    <select id="login" resultType="Account">
+        select * from atm_account where accountId=#{loginAct} and accountPwd=#{loginPwd}
+    </select>
+    <select id="search" resultType="String">
+        select accountBalance from atm_account where accountId=#{myAccount}
+    </select>
+
+    <update id="update">
+        update atm_account set accountBalance=#{totalMoney} where accountId=#{accountId}
+    </update>
+<!--    <update id="save">-->
+<!--        update atm_account set accountBalance=accountBalance+#{arg1} where accountId=#{arg0}-->
+<!--    </update>-->
+<!--    <update id="draw">-->
+<!--        update atm_account set accountBalance=accountBalance-#{arg1} where accountId=#{arg0}-->
+<!--    </update>-->
+
+
+</mapper>
